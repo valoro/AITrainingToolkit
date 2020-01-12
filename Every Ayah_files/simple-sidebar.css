@@ -1,0 +1,116 @@
+/*!
+ * Start Bootstrap - Simple Sidebar (https://startbootstrap.com/template-overviews/simple-sidebar)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-simple-sidebar/blob/master/LICENSE)
+ */
+
+body {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin .25s ease-out;
+    -moz-transition: margin .25s ease-out;
+    -o-transition: margin .25s ease-out;
+    transition: margin .25s ease-out;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    padding: 0.875rem 1.25rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: #007bff;
+}
+
+#sidebar-wrapper .sidebar-heading a {
+    color: white;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#sidebar-wrapper .list-group-item.dropdown-group-item {
+    position: relative;
+}
+
+#sidebar-wrapper .list-group-item.dropdown-group-item:after {
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%)
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}
+
+.recitations-menu {
+    width: 100%;
+    position: initial!important;
+    top: 0!important;
+    float: none;
+    transform: none!important;
+    border-radius: 0;
+    border: 0;
+    background: #f8f9f9;
+    padding: 0;
+}
+
+.recitations-menu .dropdown-item {
+    border-bottom: 1px solid rgba(0, 0, 0, .125);
+    font-size: 0.9em;
+    padding: 10px 0 10px 40px;
+}
+
+.recitations-menu .dropdown-item:hover {
+    background-color: #dae0e5!important;
+}
+
+.Quran {
+    list-style: none;
+    padding: 20px;
+}
+
+.Quran>li {
+    padding: 10px;
+}
+
+.expandable-hitarea {
+    display: inline-block;
+    margin-left: -16px;
+    font-weight: bold;
+    color: #007bff;
+    cursor: pointer;
+}
+
+.missing-list {
+    font-size: 1em;
+}

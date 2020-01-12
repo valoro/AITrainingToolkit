@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width" />
+  <meta name="description" content="Sa7by Chat Bot Demo with Web Speech API" />
+
+  <title>Sa7by</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div>
+    <h2>Record</h2>
+    <p>
+      <button id=record>Start</button>
+      <button id=stopRecord disabled>Stop</button>
+    </p>
+    <p>
+      <audio id=recordedAudio></audio>
+
+    </p>
+    <p id="text">You said: <em class="output-you">...</em></p>
+  </div>
+
+  <iframe src="Every%20Ayah_files/getfile.html" style="border:0;" width="100%" height="600px"></iframe>
+
+  <script src="speech.js"></script>
+  <script type="text/javascript">
+
+    let record = document.getElementById('record');
+    let stop = document.getElementById('stopRecord');
+    let recordedAudio = document.getElementById('recordedAudio');
+    let text = document.getElementById("text");
+
+    let audioChunks = [];
+    let finalTextResult;
+
+    let speech = new Speech({
+      lang: "ar-EG", // Mandarin Chinese, default is English.
+      debugging: true,
+      continuous: true,
+      interimResults: true,
+      autoRestart: true
+    });
+
+
+
+    navigator.mediaDevices.getUserMedia({ audio: true })
+      .then(stream => { handlerFunction(stream) })
+
+    function handlerFunction(stream) {
+      rec = new MediaRecorder(stream);
+      rec.ondataavailable = e => {
+        audioChunks.push(e.data);
+        if (rec.state == "inactive") {
+          let blob = new Blob(audioChunks, { type: 'audio/mpeg-3' });
+          recordedAudio.src = URL.createObjectURL(blob);
+          recordedAudio.controls = true;
+          recordedAudio.autoplay = true;
+          sendData(blob)
+        }
+      }
+    }
+    record.onclick = e => {
+      console.log('record is clicked')
+      record.disabled = true;
+      record.style.backgroundColor = "blue"
+      stopRecord.disabled = false;
+      audioChunks = [];
+      rec.start();
+      speech
+        .on("start", function () {
+          text.innerHTML = "Come on, talk to me.";
+        })
+        .on("end", function () {
+          text.innerHTML = "Stopped listening.";
+        })
+        .on("interimResult", function (msg) {
+          text.innerHTML = msg;
+        })
+        .on("finalResult", function (msg) {
+          text.innerHTML = msg;
+          finalTextResult = msg;
+        })
+        .start();
+    }
+
+    stopRecord.onclick = e => {
+      console.log("stop is clicked")
+      record.disabled = false;
+      stop.disabled = true;
+      record.style.backgroundColor = "red"
+      rec.stop();
+      speech.stop();
+    }
+
+    async function sendData(data) {
+      let finalObjectToSend = {};
+      const toBase64 = file => new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.readAsDataURL(file);
+        reader.onload = () => resolve(reader.result.split(',')[1]);
+        reader.onerror = error => reject(error);
+      });
+      let audioBase64 = await toBase64(data);
+      let nameOfAudio = 'nadyTest1234.mp3';
+      // final object to send to gateway
+      finalObjectToSend = {
+        audioBase64,
+        nameOfAudio,
+        finalTextResult,
+      }
+    //   calling aws GateWay to and send request with name of audio && audio base 64
+    //   const url = 'https://6ihdsh5jd2.execute-api.us-east-1.amazonaws.com/test/uploadtest';
+    //   const response = await fetch(url, {
+    //     method: 'POST',
+    //     headers: {
+    //       'Content-Type': 'application/json'
+    //     },
+    //     body: JSON.stringify({ nameOfAudio, audioBase64 })
+    //   });
+    //   console.log(response);
+    // }
+  </script>
+</body>
+
+</html>

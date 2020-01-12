@@ -1,0 +1,495 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<!-- saved from url=(0046)http://everyayah.com/data/getfile.php?simple=1 -->
+<html><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Bootstrap core CSS -->
+	<link href="bootstrap.css" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="getfile_data/bootstrap-select.css">
+ 
+<script src="getfile_data/jquery-3.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="getfile_data/popper.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="getfile_data/bootstrap.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="getfile_data/bootstrap-select.js"></script>
+ 
+	<title>Verse By Verse Quran Get File</title>
+
+
+
+	<script type="text/javascript">
+		//Simple Quran Reciter and Get File
+
+		//By: Hamid Zarrabi-Zadeh
+
+		//June 8, 2009
+
+
+
+	</script>
+
+	<script type="text/javascript" src="getfile_data/swfobject.js"></script>
+
+	<style type="text/css">
+		body {
+			background-color: #fff;
+			padding: 20px 35px;
+			margin: 0;
+			font: 13px/18px Arial, sans-serif;
+		}
+
+		#list {
+			line-height: 2em;
+		}
+
+		#auto {
+			position: relative;
+			top: -4px;
+			color: #333;
+		}
+
+		h2 {
+			border-bottom: 2px solid #9ad;
+			margin-bottom: 1em;
+		}
+	</style>
+
+
+
+<script async="" src="hotjar-1414241.js"></script></head>
+
+<body onload="">
+
+	<ul id="list" style="list-style: none;padding-left: 0;">
+
+		<li style="margin: 10px 0;">
+			<span class="lead" style="width: 100px; display: inline-block"><b>Reciter </b></span>
+			<div class="dropdown bootstrap-select"><select id="reciter" onchange="setURLandImage();" class="" tabindex="-98">
+        <option value="AbdulSamad_64kbps_QuranExplorer.Com">Abdul Basit Abdul Samad (AbdulSamad_64kbps_QuranExplorer.Com)</option>
+        <option value="Abdul_Basit_Mujawwad_128kbps">Abdul Basit Mujawwad (Abdul_Basit_Mujawwad_128kbps)</option>
+        <option value="Abdul_Basit_Murattal_192kbps">Abdul Basit Murattal (Abdul_Basit_Murattal_192kbps)</option>
+        <option value="Abdul_Basit_Murattal_64kbps">Abdul Basit Murattal (Abdul_Basit_Murattal_64kbps)</option>
+        <option value="Abdullaah_3awwaad_Al-Juhaynee_128kbps">Abdullaah Awaad Al-Juhaynee (Abdullaah_3awwaad_Al-Juhaynee_128kbps)</option>
+        <option value="Abdullah_Basfar_192kbps">Abdullah Basfar (Abdullah_Basfar_192kbps)</option>
+        <option value="Abdullah_Basfar_32kbps">Abdullah Basfar (Abdullah_Basfar_32kbps)</option>
+        <option value="Abdullah_Basfar_64kbps">Abdullah Basfar (Abdullah_Basfar_64kbps)</option>
+        <option value="Abdullah_Matroud_128kbps">Abdullah Matroud (Abdullah_Matroud_128kbps)</option>
+        <option value="Abdurrahmaan_As-Sudais_192kbps">Abdurrahmaan As-Sudais (Abdurrahmaan_As-Sudais_192kbps)</option>
+        <option value="Abdurrahmaan_As-Sudais_64kbps">Abdurrahmaan As-Sudais (Abdurrahmaan_As-Sudais_64kbps)</option>
+        <option value="Abu_Bakr_Ash-Shaatree_128kbps" selected="selected">Abu Bakr Ash-Shaatree (Abu_Bakr_Ash-Shaatree_128kbps)</option>
+        <option value="Abu_Bakr_Ash-Shaatree_64kbps">Abu Bakr_Ash-Shaatree (Abu_Bakr_Ash-Shaatree_64kbps)</option>
+        <option value="Ahmed_Neana_128kbps">Ahmed Neana (Ahmed_Neana_128kbps)</option>
+        <option value="Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net">Ahmed Ibn Ali Al-Ajamy (Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net)
+        </option>
+        <option value="Ahmed_ibn_Ali_al-Ajamy_64kbps_QuranExplorer.Com">Ahmed Ibn Ali Al-Ajamy (Ahmed_ibn_Ali_al-Ajamy_64kbps_QuranExplorer.Com)
+        </option>
+        <option value="Akram_AlAlaqimy_128kbps">Akram AlAlaqimy (Akram_AlAlaqimy_128kbps)</option>
+        <option value="Alafasy_128kbps">Alafasy (Alafasy_128kbps)</option>
+        <option value="Alafasy_64kbps">Alafasy (Alafasy_64kbps)</option>
+        <option value="Ali_Hajjaj_AlSuesy_128kbps">Ali Hajjaj AlSuesy (Ali_Hajjaj_AlSuesy_128kbps)</option>
+        <option value="Ali_Jaber_64kbps">Ali Jaber (Ali_Jaber_64kbps)</option>
+        <option value="Ayman_Sowaid_64kbps">Ayman Sowaid (Ayman_Sowaid_64kbps)</option>
+        <option value="English/Sahih_Intnl_Ibrahim_Walk_192kbps">Sahih Ibrahim (English/Sahih_Intnl_Ibrahim_Walk_192kbps)</option>
+        <option value="Fares_Abbad_64kbps">Fares Abbad (Fares_Abbad_64kbps)</option>
+        <option value="Ghamadi_40kbps">Ghamadi (Ghamadi_40kbps)</option>
+        <option value="Hani_Rifai_192kbps">Hani Rifai (Hani_Rifai_192kbps)</option>
+        <option value="Hani_Rifai_64kbps">Hani Rifai (Hani_Rifai_64kbps)</option>
+        <option value="Hudhaify_128kbps">Hudhaify (Hudhaify_128kbps)</option>
+        <option value="Hudhaify_32kbps">Hudhaify (Hudhaify_32kbps)</option>
+        <option value="Hudhaify_64kbps">Hudhaify (Hudhaify_64kbps)</option>
+        <option value="Husary_128kbps">Al Husary (Husary_128kbps)</option>
+        <option value="Husary_128kbps_Mujawwad">Al Husary - Mujawwad (Husary_128kbps_Mujawwad)</option>
+        <option value="Husary_64kbps">Al Husary (Husary_64kbps)</option>
+        <option value="Husary_Muallim_128kbps">Al Husary - Muallim (Husary_Muallim_128kbps)</option>
+        <option value="Husary_Mujawwad_64kbps">Al Husary - Mujawwad (Husary_Mujawwad_64kbps)</option>
+        <option value="Ibrahim_Akhdar_32kbps">Ibrahim Akhdar (Ibrahim_Akhdar_32kbps)</option>
+        <option value="Ibrahim_Akhdar_64kbps">Ibrahim Akhdar (Ibrahim_Akhdar_64kbps)</option>
+        <option value="Karim_Mansoori_40kbps">Karim Mansoori (Karim_Mansoori_40kbps)</option>
+        <option value="Khaalid_Abdullaah_al-Qahtaanee_192kbps">Khaalid Abdullaah Al-Qahtaanee (Khaalid_Abdullaah_al-Qahtaanee_192kbps)</option>
+        <option value="MaherAlMuaiqly128kbps">Maher AlMuaiqly (MaherAlMuaiqly128kbps)</option>
+        <option value="Maher_AlMuaiqly_64kbps">Maher AlMuaiqly (Maher_AlMuaiqly_64kbps)</option>
+        <option value="Menshawi_16kbps">Al Menshawi (Menshawi_16kbps)</option>
+        <option value="Menshawi_32kbps">Al Menshawi (Menshawi_32kbps)</option>
+        <option value="Minshawy_Mujawwad_192kbps">Al Minshawy - Mujawwad (Minshawy_Mujawwad_192kbps)</option>
+        <option value="Minshawy_Mujawwad_64kbps">Al Minshawy - Mujawwad (Minshawy_Mujawwad_64kbps)</option>
+        <option value="Minshawy_Murattal_128kbps">Al Minshawy - Murattal (Minshawy_Murattal_128kbps)</option>
+        <option value="Mohammad_al_Tablaway_128kbps">Mohammad Al Tablaway (Mohammad_al_Tablaway_128kbps)</option>
+        <option value="Mohammad_al_Tablaway_64kbps">Mohammad Al Tablaway (Mohammad_al_Tablaway_64kbps)</option>
+        <option value="Muhammad_AbdulKareem_128kbps">Muhammad AbdulKareem (Muhammad_AbdulKareem_128kbps)</option>
+        <option value="Muhammad_Ayyoub_128kbps">Muhammad Ayyoub (Muhammad_Ayyoub_128kbps)</option>
+        <option value="Muhammad_Ayyoub_32kbps">Muhammad Ayyoub (Muhammad_Ayyoub_32kbps)</option>
+        <option value="Muhammad_Ayyoub_64kbps">Muhammad Ayyoub (Muhammad_Ayyoub_64kbps)</option>
+        <option value="Muhammad_Jibreel_128kbps">Muhammad Jibreel (Muhammad_Jibreel_128kbps)</option>
+        <option value="Muhammad_Jibreel_64kbps">Muhammad Jibreel (Muhammad_Jibreel_64kbps)</option>
+        <option value="Muhsin_Al_Qasim_192kbps">Muhsin Al Qasim (Muhsin_Al_Qasim_192kbps)</option>
+        <option value="MultiLanguage/Basfar_Walk_192kbps">Basfar - MultiLanguage (MultiLanguage/Basfar_Walk_192kbps)</option>
+        <option value="Mustafa_Ismail_48kbps">Mustafa Ismail (Mustafa_Ismail_48kbps)</option>
+        <option value="Nasser_Alqatami_128kbps">Nasser Alqatami (Nasser_Alqatami_128kbps)</option>
+        <option value="Parhizgar_48kbps">Parhizgar (Parhizgar_48kbps)</option>
+        <option value="Sahl_Yassin_128kbps">Sahl Yassin (Sahl_Yassin_128kbps)</option>
+        <option value="Salaah_AbdulRahman_Bukhatir_128kbps">Salaah AbdulRahman Bukhatir (Salaah_AbdulRahman_Bukhatir_128kbps)</option>
+        <option value="Salah_Al_Budair_128kbps">Salah Al Budair (Salah_Al_Budair_128kbps)</option>
+        <option value="Saood_ash-Shuraym_128kbps">Saood Ash-Shuraym (Shuraym_128kbps)</option>
+        <option value="Saood_ash-Shuraym_64kbps">Saood Ash-Shuraym (Shuraym_64kbps)</option>
+        <option value="Yaser_Salamah_128kbps">Yaser Salamah (Yaser_Salamah_128kbps)</option>
+        <option value="Yasser_Ad-Dussary_128kbps">Yasser Ad-Dussary (Dussary_128kbps)</option>
+        <option value="ahmed_ibn_ali_al_ajamy_128kbps">Ahmed Ibn Ali Al-Ajamy (ahmed_ibn_ali_al_ajamy_128kbps)</option>
+        <option value="aziz_alili_128kbps">Aziz Alili (aziz_alili_128kbps)</option>
+        <option value="khalefa_al_tunaiji_64kbps">Khalefa Al Tunaiji (khalefa_al_tunaiji_64kbps)</option>
+        <option value="mahmoud_ali_al_banna_32kbps">Mahmoud Ali Al Banna (mahmoud_ali_al_banna_32kbps)</option>
+        <option value="translations/Fooladvand_Hedayatfar_40Kbps">Hedayatfar - with translations by Fooladvand (translations/Fooladvand_Hedayatfar_40Kbps)</option>
+        <option value="translations/Makarem_Kabiri_16Kbps">Makarem Kabiri - with translations (translations/Makarem_Kabiri_16Kbps)</option>
+        <option value="translations/azerbaijani/balayev">Balayev - with azerbaijani translations (translations/azerbaijani/balayev)</option>
+        <option value="translations/besim_korkut_ajet_po_ajet">Besim Korkut - with translations (translations/besim_korkut_ajet_po_ajet)</option>
+        <option value="translations/urdu_farhat_hashmi">Farhat Hashmi - with Urdu translations (translations/urdu_farhat_hashmi)</option>
+        <option value="translations/urdu_shamshad_ali_khan_46kbps">Shamshad Ali Khan - with Urdu translations (translations/urdu_shamshad_ali_khan_46kbps)</option>
+        <option value="warsh/warsh_Abdul_Basit_128kbps">Abdul Basit - warsh (warsh/warsh_Abdul_Basit_128kbps)</option>
+        <option value="warsh/warsh_ibrahim_aldosary_128kbps">Ibrahim Al Dosary - warsh (warsh/warsh_ibrahim_aldosary_128kbps)</option>
+        <option value="warsh/warsh_yassin_al_jazaery_64kbps">Yassin Al Jazaery - warsh (warsh/warsh_yassin_al_jazaery_64kbps)</option>
+    </select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-1" aria-haspopup="listbox" aria-expanded="false" data-id="reciter" title="Abu Bakr Ash-Shaatree (Abu_Bakr_Ash-Shaatree_128kbps)"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">Abu Bakr Ash-Shaatree (Abu_Bakr_Ash-Shaatree_128kbps)</div></div> </div></button><div class="dropdown-menu" style="max-height: 512px; overflow: hidden; min-height: 142px; min-width: 719px; position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 37px, 0px);" x-placement="bottom-start"><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-1" aria-autocomplete="list" aria-activedescendant="bs-select-1-11"></div><div class="inner show" role="listbox" id="bs-select-1" tabindex="-1" style="max-height: 450px; overflow-y: auto; min-height: 80px;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class=""><a role="option" class="dropdown-item" id="bs-select-1-0" tabindex="0" aria-setsize="79" aria-posinset="1"><span class="text">Abdul Basit Abdul Samad (AbdulSamad_64kbps_QuranExplorer.Com)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-1" tabindex="0"><span class="text">Abdul Basit Mujawwad (Abdul_Basit_Mujawwad_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-2" tabindex="0" aria-setsize="79" aria-posinset="3"><span class="text">Abdul Basit Murattal (Abdul_Basit_Murattal_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-3" tabindex="0" aria-setsize="79" aria-posinset="4"><span class="text">Abdul Basit Murattal (Abdul_Basit_Murattal_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-4" tabindex="0" aria-setsize="79" aria-posinset="5"><span class="text">Abdullaah Awaad Al-Juhaynee (Abdullaah_3awwaad_Al-Juhaynee_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-5" tabindex="0" aria-setsize="79" aria-posinset="6"><span class="text">Abdullah Basfar (Abdullah_Basfar_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-6" tabindex="0"><span class="text">Abdullah Basfar (Abdullah_Basfar_32kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-7" tabindex="0"><span class="text">Abdullah Basfar (Abdullah_Basfar_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-8" tabindex="0"><span class="text">Abdullah Matroud (Abdullah_Matroud_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-9" tabindex="0"><span class="text">Abdurrahmaan As-Sudais (Abdurrahmaan_As-Sudais_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-10" tabindex="0"><span class="text">Abdurrahmaan As-Sudais (Abdurrahmaan_As-Sudais_64kbps)</span></a></li><li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-1-11" tabindex="0" aria-setsize="79" aria-posinset="12" aria-selected="true"><span class="text">Abu Bakr Ash-Shaatree (Abu_Bakr_Ash-Shaatree_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-12" tabindex="0"><span class="text">Abu Bakr_Ash-Shaatree (Abu_Bakr_Ash-Shaatree_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-13" tabindex="0"><span class="text">Ahmed Neana (Ahmed_Neana_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-14" tabindex="0"><span class="text">Ahmed Ibn Ali Al-Ajamy (Ahmed_ibn_Ali_al-Ajamy_128kbps_ketaballah.net)
+        </span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-15" tabindex="0"><span class="text">Ahmed Ibn Ali Al-Ajamy (Ahmed_ibn_Ali_al-Ajamy_64kbps_QuranExplorer.Com)
+        </span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-16" tabindex="0"><span class="text">Akram AlAlaqimy (Akram_AlAlaqimy_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-17" tabindex="0"><span class="text">Alafasy (Alafasy_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-18" tabindex="0"><span class="text">Alafasy (Alafasy_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-19" tabindex="0"><span class="text">Ali Hajjaj AlSuesy (Ali_Hajjaj_AlSuesy_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-20" tabindex="0"><span class="text">Ali Jaber (Ali_Jaber_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-21" tabindex="0"><span class="text">Ayman Sowaid (Ayman_Sowaid_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-22" tabindex="0"><span class="text">Sahih Ibrahim (English/Sahih_Intnl_Ibrahim_Walk_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-23" tabindex="0"><span class="text">Fares Abbad (Fares_Abbad_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-24" tabindex="0"><span class="text">Ghamadi (Ghamadi_40kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-25" tabindex="0"><span class="text">Hani Rifai (Hani_Rifai_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-26" tabindex="0"><span class="text">Hani Rifai (Hani_Rifai_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-27" tabindex="0"><span class="text">Hudhaify (Hudhaify_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-28" tabindex="0"><span class="text">Hudhaify (Hudhaify_32kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-29" tabindex="0"><span class="text">Hudhaify (Hudhaify_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-30" tabindex="0"><span class="text">Al Husary (Husary_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-31" tabindex="0"><span class="text">Al Husary - Mujawwad (Husary_128kbps_Mujawwad)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-32" tabindex="0"><span class="text">Al Husary (Husary_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-33" tabindex="0"><span class="text">Al Husary - Muallim (Husary_Muallim_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-34" tabindex="0"><span class="text">Al Husary - Mujawwad (Husary_Mujawwad_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-35" tabindex="0"><span class="text">Ibrahim Akhdar (Ibrahim_Akhdar_32kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-36" tabindex="0"><span class="text">Ibrahim Akhdar (Ibrahim_Akhdar_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-37" tabindex="0"><span class="text">Karim Mansoori (Karim_Mansoori_40kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-38" tabindex="0"><span class="text">Khaalid Abdullaah Al-Qahtaanee (Khaalid_Abdullaah_al-Qahtaanee_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-39" tabindex="0"><span class="text">Maher AlMuaiqly (MaherAlMuaiqly128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-40" tabindex="0"><span class="text">Maher AlMuaiqly (Maher_AlMuaiqly_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-41" tabindex="0"><span class="text">Al Menshawi (Menshawi_16kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-42" tabindex="0"><span class="text">Al Menshawi (Menshawi_32kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-43" tabindex="0"><span class="text">Al Minshawy - Mujawwad (Minshawy_Mujawwad_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-44" tabindex="0"><span class="text">Al Minshawy - Mujawwad (Minshawy_Mujawwad_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-45" tabindex="0"><span class="text">Al Minshawy - Murattal (Minshawy_Murattal_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-46" tabindex="0"><span class="text">Mohammad Al Tablaway (Mohammad_al_Tablaway_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-47" tabindex="0"><span class="text">Mohammad Al Tablaway (Mohammad_al_Tablaway_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-48" tabindex="0"><span class="text">Muhammad AbdulKareem (Muhammad_AbdulKareem_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-49" tabindex="0"><span class="text">Muhammad Ayyoub (Muhammad_Ayyoub_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-50" tabindex="0"><span class="text">Muhammad Ayyoub (Muhammad_Ayyoub_32kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-51" tabindex="0"><span class="text">Muhammad Ayyoub (Muhammad_Ayyoub_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-52" tabindex="0"><span class="text">Muhammad Jibreel (Muhammad_Jibreel_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-53" tabindex="0"><span class="text">Muhammad Jibreel (Muhammad_Jibreel_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-54" tabindex="0"><span class="text">Muhsin Al Qasim (Muhsin_Al_Qasim_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-55" tabindex="0"><span class="text">Basfar - MultiLanguage (MultiLanguage/Basfar_Walk_192kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-56" tabindex="0"><span class="text">Mustafa Ismail (Mustafa_Ismail_48kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-57" tabindex="0"><span class="text">Nasser Alqatami (Nasser_Alqatami_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-58" tabindex="0"><span class="text">Parhizgar (Parhizgar_48kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-59" tabindex="0"><span class="text">Sahl Yassin (Sahl_Yassin_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-60" tabindex="0"><span class="text">Salaah AbdulRahman Bukhatir (Salaah_AbdulRahman_Bukhatir_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-61" tabindex="0"><span class="text">Salah Al Budair (Salah_Al_Budair_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-62" tabindex="0"><span class="text">Saood Ash-Shuraym (Shuraym_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-63" tabindex="0"><span class="text">Saood Ash-Shuraym (Shuraym_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-64" tabindex="0"><span class="text">Yaser Salamah (Yaser_Salamah_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-65" tabindex="0"><span class="text">Yasser Ad-Dussary (Dussary_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-66" tabindex="0"><span class="text">Ahmed Ibn Ali Al-Ajamy (ahmed_ibn_ali_al_ajamy_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-67" tabindex="0"><span class="text">Aziz Alili (aziz_alili_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-68" tabindex="0"><span class="text">Khalefa Al Tunaiji (khalefa_al_tunaiji_64kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-69" tabindex="0"><span class="text">Mahmoud Ali Al Banna (mahmoud_ali_al_banna_32kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-70" tabindex="0"><span class="text">Hedayatfar - with translations by Fooladvand (translations/Fooladvand_Hedayatfar_40Kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-71" tabindex="0"><span class="text">Makarem Kabiri - with translations (translations/Makarem_Kabiri_16Kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-72" tabindex="0"><span class="text">Balayev - with azerbaijani translations (translations/azerbaijani/balayev)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-73" tabindex="0"><span class="text">Besim Korkut - with translations (translations/besim_korkut_ajet_po_ajet)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-74" tabindex="0"><span class="text">Farhat Hashmi - with Urdu translations (translations/urdu_farhat_hashmi)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-75" tabindex="0"><span class="text">Shamshad Ali Khan - with Urdu translations (translations/urdu_shamshad_ali_khan_46kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-76" tabindex="0"><span class="text">Abdul Basit - warsh (warsh/warsh_Abdul_Basit_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-77" tabindex="0"><span class="text">Ibrahim Al Dosary - warsh (warsh/warsh_ibrahim_aldosary_128kbps)</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-1-78" tabindex="0"><span class="text">Yassin Al Jazaery - warsh (warsh/warsh_yassin_al_jazaery_64kbps)</span></a></li></ul></div></div></div>
+
+
+		</li>
+		<li style="margin: 10px 0;">
+			<span class="lead" style="width: 100px; display: inline-block"><b>Chapter </b></span>
+			<div class="dropdown bootstrap-select"><select id="chapter" onchange="setURLandImage();" class="" tabindex="-98">
+				<option value="1" selected="selected">1: Al-Faatiha</option>
+				<option value="2">2: Al-Baqara</option>
+				<option value="3">3: Aal-i-Imraan</option>
+				<option value="4">4: An-Nisaa</option>
+				<option value="5">5: Al-Maaida</option>
+				<option value="6">6: Al-An'aam</option>
+				<option value="7">7: Al-A'raaf</option>
+				<option value="8">8: Al-Anfaal</option>
+				<option value="9">9: At-Tawba</option>
+				<option value="10">10: Yunus</option>
+				<option value="11">11: Hud</option>
+				<option value="12">12: Yusuf</option>
+				<option value="13">13: Ar-Ra'd</option>
+				<option value="14">14: Ibrahim</option>
+				<option value="15">15: Al-Hijr</option>
+				<option value="16">16: An-Nahl</option>
+				<option value="17">17: Al-Israa</option>
+				<option value="18">18: Al-Kahf</option>
+				<option value="19">19: Maryam</option>
+				<option value="20">20: Taa-Haa</option>
+				<option value="21">21: Al-Anbiyaa</option>
+				<option value="22">22: Al-Hajj</option>
+				<option value="23">23: Al-Muminoon</option>
+				<option value="24">24: An-Noor</option>
+				<option value="25">25: Al-Furqaan</option>
+				<option value="26">26: Ash-Shu'araa</option>
+				<option value="27">27: An-Naml</option>
+				<option value="28">28: Al-Qasas</option>
+				<option value="29">29: Al-Ankaboot</option>
+				<option value="30">30: Ar-Room</option>
+				<option value="31">31: Luqman</option>
+				<option value="32">32: As-Sajda</option>
+				<option value="33">33: Al-Ahzaab</option>
+				<option value="34">34: Saba</option>
+				<option value="35">35: Faatir</option>
+				<option value="36">36: Yaseen</option>
+				<option value="37">37: As-Saaffaat</option>
+				<option value="38">38: Saad</option>
+				<option value="39">39: Az-Zumar</option>
+				<option value="40">40: Al-Ghaafir</option>
+				<option value="41">41: Fussilat</option>
+				<option value="42">42: Ash-Shura</option>
+				<option value="43">43: Az-Zukhruf</option>
+				<option value="44">44: Ad-Dukhaan</option>
+				<option value="45">45: Al-Jaathiya</option>
+				<option value="46">46: Al-Ahqaf</option>
+				<option value="47">47: Muhammad</option>
+				<option value="48">48: Al-Fath</option>
+				<option value="49">49: Al-Hujuraat</option>
+				<option value="50">50: Qaaf</option>
+				<option value="51">51: Adh-Dhaariyat</option>
+				<option value="52">52: At-Tur</option>
+				<option value="53">53: An-Najm</option>
+				<option value="54">54: Al-Qamar</option>
+				<option value="55">55: Ar-Rahmaan</option>
+				<option value="56">56: Al-Waaqia</option>
+				<option value="57">57: Al-Hadid</option>
+				<option value="58">58: Al-Mujaadila</option>
+				<option value="59">59: Al-Hashr</option>
+				<option value="60">60: Al-Mumtahana</option>
+				<option value="61">61: As-Saff</option>
+				<option value="62">62: Al-Jumu'a</option>
+				<option value="63">63: Al-Munaafiqoon</option>
+				<option value="64">64: At-Taghaabun</option>
+				<option value="65">65: At-Talaaq</option>
+				<option value="66">66: At-Tahrim</option>
+				<option value="67">67: Al-Mulk</option>
+				<option value="68">68: Al-Qalam</option>
+				<option value="69">69: Al-Haaqqa</option>
+				<option value="70">70: Al-Ma'aarij</option>
+				<option value="71">71: Nooh</option>
+				<option value="72">72: Al-Jinn</option>
+				<option value="73">73: Al-Muzzammil</option>
+				<option value="74">74: Al-Muddaththir</option>
+				<option value="75">75: Al-Qiyaama</option>
+				<option value="76">76: Al-Insaan</option>
+				<option value="77">77: Al-Mursalaat</option>
+				<option value="78">78: An-Naba</option>
+				<option value="79">79: An-Naazi'aat</option>
+				<option value="80">80: Abasa</option>
+				<option value="81">81: At-Takwir</option>
+				<option value="82">82: Al-Infitaar</option>
+				<option value="83">83: Al-Mutaffifin</option>
+				<option value="84">84: Al-Inshiqaaq</option>
+				<option value="85">85: Al-Burooj</option>
+				<option value="86">86: At-Taariq</option>
+				<option value="87">87: Al-A'laa</option>
+				<option value="88">88: Al-Ghaashiya</option>
+				<option value="89">89: Al-Fajr</option>
+				<option value="90">90: Al-Balad</option>
+				<option value="91">91: Ash-Shams</option>
+				<option value="92">92: Al-Lail</option>
+				<option value="93">93: Ad-Dhuhaa</option>
+				<option value="94">94: Ash-Sharh</option>
+				<option value="95">95: At-Tin</option>
+				<option value="96">96: Al-Alaq</option>
+				<option value="97">97: Al-Qadr</option>
+				<option value="98">98: Al-Bayyina</option>
+				<option value="99">99: Az-Zalzala</option>
+				<option value="100">100: Al-Aadiyaat</option>
+				<option value="101">101: Al-Qaari'a</option>
+				<option value="102">102: At-Takaathur</option>
+				<option value="103">103: Al-Asr</option>
+				<option value="104">104: Al-Humaza</option>
+				<option value="105">105: Al-Fil</option>
+				<option value="106">106: Quraish</option>
+				<option value="107">107: Al-Maa'un</option>
+				<option value="108">108: Al-Kawthar</option>
+				<option value="109">109: Al-Kaafiroon</option>
+				<option value="110">110: An-Nasr</option>
+				<option value="111">111: Al-Masad</option>
+				<option value="112">112: Al-Ikhlaas</option>
+				<option value="113">113: Al-Falaq</option>
+				<option value="114">114: An-Naas</option>
+			</select><button type="button" class="btn dropdown-toggle btn-light" data-toggle="dropdown" role="combobox" aria-owns="bs-select-2" aria-haspopup="listbox" aria-expanded="false" data-id="chapter" title="1: Al-Faatiha"><div class="filter-option"><div class="filter-option-inner"><div class="filter-option-inner-inner">1: Al-Faatiha</div></div> </div></button><div class="dropdown-menu" style="max-height: 464.4px; overflow: hidden; min-height: 142px; min-width: 220px; position: absolute; transform: translate3d(0px, 37px, 0px); top: 0px; left: 0px; will-change: transform;" x-placement="bottom-start"><div class="bs-searchbox"><input type="text" class="form-control" autocomplete="off" role="combobox" aria-label="Search" aria-controls="bs-select-2" aria-autocomplete="list" aria-activedescendant="bs-select-2-0"></div><div class="inner show" role="listbox" id="bs-select-2" tabindex="-1" style="max-height: 402.4px; overflow-y: auto; min-height: 80px;"><ul class="dropdown-menu inner show" role="presentation" style="margin-top: 0px; margin-bottom: 0px;"><li class="selected active"><a role="option" class="dropdown-item active selected" id="bs-select-2-0" tabindex="0" aria-setsize="114" aria-posinset="1" aria-selected="true"><span class="text">1: Al-Faatiha</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-1" tabindex="0"><span class="text">2: Al-Baqara</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-2" tabindex="0"><span class="text">3: Aal-i-Imraan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-3" tabindex="0"><span class="text">4: An-Nisaa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-4" tabindex="0"><span class="text">5: Al-Maaida</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-5" tabindex="0"><span class="text">6: Al-An'aam</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-6" tabindex="0"><span class="text">7: Al-A'raaf</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-7" tabindex="0"><span class="text">8: Al-Anfaal</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-8" tabindex="0"><span class="text">9: At-Tawba</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-9" tabindex="0"><span class="text">10: Yunus</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-10" tabindex="0"><span class="text">11: Hud</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-11" tabindex="0"><span class="text">12: Yusuf</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-12" tabindex="0"><span class="text">13: Ar-Ra'd</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-13" tabindex="0"><span class="text">14: Ibrahim</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-14" tabindex="0"><span class="text">15: Al-Hijr</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-15" tabindex="0"><span class="text">16: An-Nahl</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-16" tabindex="0"><span class="text">17: Al-Israa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-17" tabindex="0"><span class="text">18: Al-Kahf</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-18" tabindex="0"><span class="text">19: Maryam</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-19" tabindex="0"><span class="text">20: Taa-Haa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-20" tabindex="0"><span class="text">21: Al-Anbiyaa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-21" tabindex="0"><span class="text">22: Al-Hajj</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-22" tabindex="0"><span class="text">23: Al-Muminoon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-23" tabindex="0"><span class="text">24: An-Noor</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-24" tabindex="0"><span class="text">25: Al-Furqaan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-25" tabindex="0"><span class="text">26: Ash-Shu'araa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-26" tabindex="0"><span class="text">27: An-Naml</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-27" tabindex="0"><span class="text">28: Al-Qasas</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-28" tabindex="0"><span class="text">29: Al-Ankaboot</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-29" tabindex="0"><span class="text">30: Ar-Room</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-30" tabindex="0"><span class="text">31: Luqman</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-31" tabindex="0"><span class="text">32: As-Sajda</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-32" tabindex="0"><span class="text">33: Al-Ahzaab</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-33" tabindex="0"><span class="text">34: Saba</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-34" tabindex="0"><span class="text">35: Faatir</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-35" tabindex="0"><span class="text">36: Yaseen</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-36" tabindex="0"><span class="text">37: As-Saaffaat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-37" tabindex="0"><span class="text">38: Saad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-38" tabindex="0"><span class="text">39: Az-Zumar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-39" tabindex="0"><span class="text">40: Al-Ghaafir</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-40" tabindex="0"><span class="text">41: Fussilat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-41" tabindex="0"><span class="text">42: Ash-Shura</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-42" tabindex="0"><span class="text">43: Az-Zukhruf</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-43" tabindex="0"><span class="text">44: Ad-Dukhaan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-44" tabindex="0"><span class="text">45: Al-Jaathiya</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-45" tabindex="0"><span class="text">46: Al-Ahqaf</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-46" tabindex="0"><span class="text">47: Muhammad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-47" tabindex="0"><span class="text">48: Al-Fath</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-48" tabindex="0"><span class="text">49: Al-Hujuraat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-49" tabindex="0"><span class="text">50: Qaaf</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-50" tabindex="0"><span class="text">51: Adh-Dhaariyat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-51" tabindex="0"><span class="text">52: At-Tur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-52" tabindex="0"><span class="text">53: An-Najm</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-53" tabindex="0"><span class="text">54: Al-Qamar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-54" tabindex="0"><span class="text">55: Ar-Rahmaan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-55" tabindex="0"><span class="text">56: Al-Waaqia</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-56" tabindex="0"><span class="text">57: Al-Hadid</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-57" tabindex="0"><span class="text">58: Al-Mujaadila</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-58" tabindex="0"><span class="text">59: Al-Hashr</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-59" tabindex="0"><span class="text">60: Al-Mumtahana</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-60" tabindex="0"><span class="text">61: As-Saff</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-61" tabindex="0"><span class="text">62: Al-Jumu'a</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-62" tabindex="0"><span class="text">63: Al-Munaafiqoon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-63" tabindex="0"><span class="text">64: At-Taghaabun</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-64" tabindex="0"><span class="text">65: At-Talaaq</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-65" tabindex="0"><span class="text">66: At-Tahrim</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-66" tabindex="0"><span class="text">67: Al-Mulk</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-67" tabindex="0"><span class="text">68: Al-Qalam</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-68" tabindex="0"><span class="text">69: Al-Haaqqa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-69" tabindex="0"><span class="text">70: Al-Ma'aarij</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-70" tabindex="0"><span class="text">71: Nooh</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-71" tabindex="0"><span class="text">72: Al-Jinn</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-72" tabindex="0"><span class="text">73: Al-Muzzammil</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-73" tabindex="0"><span class="text">74: Al-Muddaththir</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-74" tabindex="0"><span class="text">75: Al-Qiyaama</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-75" tabindex="0"><span class="text">76: Al-Insaan</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-76" tabindex="0"><span class="text">77: Al-Mursalaat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-77" tabindex="0"><span class="text">78: An-Naba</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-78" tabindex="0"><span class="text">79: An-Naazi'aat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-79" tabindex="0"><span class="text">80: Abasa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-80" tabindex="0"><span class="text">81: At-Takwir</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-81" tabindex="0"><span class="text">82: Al-Infitaar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-82" tabindex="0"><span class="text">83: Al-Mutaffifin</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-83" tabindex="0"><span class="text">84: Al-Inshiqaaq</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-84" tabindex="0"><span class="text">85: Al-Burooj</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-85" tabindex="0"><span class="text">86: At-Taariq</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-86" tabindex="0"><span class="text">87: Al-A'laa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-87" tabindex="0"><span class="text">88: Al-Ghaashiya</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-88" tabindex="0"><span class="text">89: Al-Fajr</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-89" tabindex="0"><span class="text">90: Al-Balad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-90" tabindex="0"><span class="text">91: Ash-Shams</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-91" tabindex="0"><span class="text">92: Al-Lail</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-92" tabindex="0"><span class="text">93: Ad-Dhuhaa</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-93" tabindex="0"><span class="text">94: Ash-Sharh</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-94" tabindex="0"><span class="text">95: At-Tin</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-95" tabindex="0"><span class="text">96: Al-Alaq</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-96" tabindex="0"><span class="text">97: Al-Qadr</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-97" tabindex="0"><span class="text">98: Al-Bayyina</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-98" tabindex="0"><span class="text">99: Az-Zalzala</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-99" tabindex="0"><span class="text">100: Al-Aadiyaat</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-100" tabindex="0"><span class="text">101: Al-Qaari'a</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-101" tabindex="0"><span class="text">102: At-Takaathur</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-102" tabindex="0"><span class="text">103: Al-Asr</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-103" tabindex="0"><span class="text">104: Al-Humaza</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-104" tabindex="0"><span class="text">105: Al-Fil</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-105" tabindex="0"><span class="text">106: Quraish</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-106" tabindex="0"><span class="text">107: Al-Maa'un</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-107" tabindex="0"><span class="text">108: Al-Kawthar</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-108" tabindex="0"><span class="text">109: Al-Kaafiroon</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-109" tabindex="0"><span class="text">110: An-Nasr</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-110" tabindex="0"><span class="text">111: Al-Masad</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-111" tabindex="0"><span class="text">112: Al-Ikhlaas</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-112" tabindex="0"><span class="text">113: Al-Falaq</span></a></li><li><a role="option" class="dropdown-item" id="bs-select-2-113" tabindex="0"><span class="text">114: An-Naas</span></a></li></ul></div></div></div>
+
+		</li>
+		<li style="margin: 10px 0;"> <span class="lead" style="width: 100px; display: inline-block"><b>Aya #&nbsp; </b></span><input type="number" id="verse" size="5" onkeyup="setURLandImage();" value="2">
+
+		</li>
+	</ul>
+
+
+
+	<h3>Preview:</h3>
+
+	<ul>
+
+		<span id="verseImage"><img src="getfile_data/1_2.png"></span><br>
+		<span id="mediaPlayer" style="display: none;"></span> &nbsp;&nbsp;
+
+		<div><audio id="newMediaPlayer" src="getfile_data/001002.mp3" controls="controls"></audio>
+			<span id="auto">(<input type="checkbox" id="autoplay"><label for="autoplay">&nbsp;Auto Play</label>)</span>
+		</div>
+
+	</ul>
+
+
+
+	<h3>Download:</h3>
+
+	<ul>
+
+		<li><a href="http://www.everyayah.com/data/Abu_Bakr_Ash-Shaatree_128kbps/001002.mp3" id="url">http://www.everyayah.com/data/Abu_Bakr_Ash-Shaatree_128kbps/001002.mp3</a></li>
+		<li><a href="http://www.everyayah.com/data/images_png/1_2.png" id="urlImage">http://www.everyayah.com/data/images_png/1_2.png</a></li>
+
+	</ul>
+
+
+
+	<script type="text/javascript">
+		jQuery('#reciter').selectpicker({
+			liveSearch: true,
+			noneSelectedText: 'Select Reciter'
+		});
+
+		jQuery('#chapter').selectpicker({
+			liveSearch: true,
+			noneSelectedText: 'Select Chapter'
+		});
+
+		setURLandImage();
+
+
+
+		function getFileURI() {
+
+			var reciter = $('reciter').value;
+
+			var sura = threeDigits($('chapter').value);
+
+			var aya = threeDigits($('verse').value);
+
+			return 'http://www.everyayah.com/data/' + reciter + '/' + sura + aya + '.mp3';
+
+		}
+
+
+		function getImageURI() {
+
+			var sura = ($('chapter').value);
+
+			var aya = ($('verse').value);
+
+			return 'http://www.everyayah.com/data/images_png/' + sura + "_" + aya + '.png';
+
+		}
+
+
+
+		function setURLandImage() {
+
+			$('url').innerHTML = $('url').href = getFileURI();
+			$('urlImage').innerHTML = $('urlImage').href = getImageURI();
+			$('verseImage').innerHTML = '<img src="' + getImageURI() + '" />';
+
+			loadFile('player', {
+				file: getFileURI()
+			});
+			document.getElementById('newMediaPlayer').src = getFileURI();
+
+			if ($('autoplay').checked)
+
+				recite();
+
+		}
+
+
+
+		function recite() {
+			if (audioSupport) {
+				document.getElementById('newMediaPlayer').play();
+			} else {
+				sendEvent('player', 'playpause');
+			}
+		}
+
+
+
+		function threeDigits(num) {
+
+			var temp = '000' + num;
+
+			return temp.substr(temp.length - 3);
+
+		}
+
+
+
+		function $(element) {
+
+			if (typeof element == 'string')
+
+				element = document.getElementById(element);
+
+			return element;
+
+		}
+
+
+
+		//-------------------------------------------------------------------
+
+		// Player javascript API
+
+		//-------------------------------------------------------------------
+
+
+
+		function initAudioPlayer(playerID, width, height, container) {
+
+			var so = new SWFObject('mediaplayer/mediaplayer.swf', playerID, width, height, 8);
+
+			so.addParam('allowscriptaccess', 'always');
+
+			so.addParam('allowfullscreen', 'false');
+
+			so.addVariable('width', width);
+
+			so.addVariable('height', height);
+
+			so.addVariable('file', getFileURI());
+
+			so.addVariable('javascriptid', playerID);
+
+			so.addVariable('enablejs', 'true');
+
+			so.addVariable('showstop ', 'false');
+
+			so.write(container);
+		}
+
+
+
+		function sendEvent(playerID, typ, param) {
+
+			var player = $(playerID);
+
+			if (player && player.sendEvent)
+
+				player.sendEvent(typ, param);
+
+		}
+
+
+
+		function loadFile(playerID, obj) {
+
+			var player = $(playerID);
+
+			if (player && player.loadFile)
+
+				player.loadFile(obj);
+
+		}
+		var audioSupport = document.getElementById('newMediaPlayer').canPlayType;
+		document.addEventListener("DOMContentLoaded", function (event) {
+			if (audioSupport) {
+				document.getElementById('mediaPlayer').style.display = "none";
+			} else {
+				document.getElementById('newMediaPlayer').style.display = "none";
+				initAudioPlayer('player', 170, 20, 'mediaPlayer');
+			}
+		});
+	</script>
+
+
+
+	<hr>
+
+	<br><strong><a href="http://www.versebyversequran.com/">Verse By Verse Quran MP3 Project</a></strong>
+
+
+
+
+  <script>
+    (function(h,o,t,j,a,r){
+        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+        h._hjSettings={hjid:1414241,hjsv:6};
+        a=o.getElementsByTagName('head')[0];
+        r=o.createElement('script');r.async=1;
+        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+  </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-41831823-3');
+  </script>
+
+
+
+</body></html>
